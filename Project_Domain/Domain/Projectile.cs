@@ -36,7 +36,7 @@ namespace Project_Domain
             image.TabStop = false;
         }
 
-        public void MoveTo()
+        public void MoveTo(Point destination)
         {
             Location = new Point(Location.X + (int)(direction.X / distance * Speed), Location.Y + (int)(direction.Y / distance * Speed));
         }
