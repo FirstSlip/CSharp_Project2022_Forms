@@ -285,7 +285,7 @@ namespace Project_Domain
             List<Projectile> projectilesToRemove = new List<Projectile>();
             foreach (var projectile in projectilesCopy)
             {
-                projectile.MoveTo();
+                projectile.MoveTo(new Point());
                 if (projectile.Location.X < 0 || projectile.Location.X > 1600 || projectile.Location.Y < 0 || projectile.Location.Y > 1000)
                 {
                     projectilesToRemove.Add(projectile);
